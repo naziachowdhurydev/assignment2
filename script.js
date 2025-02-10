@@ -26,7 +26,7 @@ function subButton() {
     password: passwordInput,
     cofirmPassword: cPasswordInput,
   });
-  console.log(students[students.length - 1]);
+  // console.log(students[students.length - 1]);
 
   // const row = `
   //      <tr>
@@ -42,14 +42,14 @@ function subButton() {
   // p.innerHTML += row;
 }
 
-const studentcontainer = document.getElementById('student-list');
+const studentcontainer = document.getElementById('oneone');
 for (let i = 0; i < students.length; i++) {
   const student = students[i];
 
-  console.log(student.name);
+  // console.log(student.name);
 
   const studentList = document.createElement('div');
-  productCard.classList.add('studentsL');
+  studentList.classList.add('student-List');
 
   studentList.innerHTML = `
   <h1>${students[students.length - 1].name}</h1>
@@ -62,3 +62,9 @@ for (let i = 0; i < students.length; i++) {
   studentcontainer.appendChild(studentList);
   console.log(studentList);
 }
+
+// const fruits = ['apple', 'grapes', 'banana', 'guava', 'orange'];
+// for (let i = 0; i < fruits.length; i++) {
+//   if (fruits[i] == 'guava') console.log('found');
+//   else console.log('not found');
+// }
